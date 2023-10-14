@@ -1,0 +1,26 @@
+{
+  "name": "porfolio-html-scss-js",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "run": "webpack serve"
+  },
+  "author": "natureSL",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.1",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
