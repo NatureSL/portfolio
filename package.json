@@ -4,7 +4,7 @@
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "run": "webpack serve"
+    "start": "webpack serve"
   },
   "author": "natureSL",
   "license": "MIT",

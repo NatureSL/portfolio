@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1>START</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/icons/favicon-16x16.png"
+    />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./style.scss">
+
+    <title>Responsive portfolio website Slava - Shch</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <div class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">SL</span>
+                <span class="nav__logo-circle">Slava Shcherbakoff.</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav-title">Menu</span>
+                <h3 class="nav__name">Slava</h3>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link"></a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link"></a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link"></a>
+                    </li>
+
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link"></a>
+                    </li>
+                </ul>
+                <!-- Close btn -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__buttons">
+                <!-- Toggel button -->
+                <div class="nav__toggel" id="nav-toggel">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </div>
     </header>
-</body>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home"></section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about"></section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section"></section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects"></section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+  </body>
 </html>
