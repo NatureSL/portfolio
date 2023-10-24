@@ -1,11 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    CLEAR ALL
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== image in title ===============-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+
+    <!--=============== REMIXICONS ===============
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">-->
+
+    <!--=============== CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Slava Portfolio</title>
+  </head>
+
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-circle">S</span>
+          <span class="nav__logo-name">Slava Shcherbakov.</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menu</span>
+          <h3 class="nav__name">Slava</h3>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Главное</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Обо мне</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Активности</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link-button"
+                >Написать мне</a
+              >
+            </li>
+          </ul>
+
+          <!-- Close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-fill"></i>
+            <img src="img/close-line.svg" alt="menu" class="ri-menu-4-line" />
+          </div>
+        </div>
+        <div class="nav__buttons">
+          <!-- Theme button
+            
+               <img class="moon-theme" src="img/moon-line.svg" alt="dark-theme" id="theme-button">
+              -->
+          <!-- Toogle button-->
+          <div class="nav__toggle" id="nav-toggle">
+            <img src="img/menu-line.svg" alt="menu" class="ri-menu-4-line" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <h1 class="home__name">Vyacheslav</h1>
+          <div class="home__perfil">
+            <div class="home__info">
+              <div class="home__image">
+                <img class="home__img" src="img/home-perfil.jpg" alt="image" />
+                <div class="home__shadow"></div>
+                <img
+                  class="home__arrow"
+                  src="img/curved-arrow.svg"
+                  alt="arrow"
+                />
+                <img
+                  class="home__line"
+                  src="img/random-lines.svg"
+                  alt="lines"
+                />
+
+                <div class="geometric-box"></div>
+              </div>
+              <div class="home__social">
+                <a
+                  class="home__social-link"
+                  href="https://t.me/lulisff"
+                  target="_blank"
+                >
+                  <img
+                    src="img/telegram-line.svg"
+                    alt="telegram"
+                    class="ri-instagram-line"
+                  />
+                </a>
+                <a
+                  class="home__social-link"
+                  href="https://www.whatsapp.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="img/whatsapp-line.svg"
+                    alt="whatsapp"
+                    class="ri-linkedin-box-line"
+                  />
+                </a>
+                <a
+                  class="home__social-link"
+                  href="https://github.com/natureSL"
+                  target="_blank"
+                >
+                  <img
+                    src="img/github-line.svg"
+                    alt="github"
+                    class="ri-github-line"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home__info">
+            <p class="home__description">
+              expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    
+            </p>
+            <a class="home__scroll" href="#about">
+              <div class="home__scroll-box">
+                <img
+                  src="img/arrow-down.svg"
+                  alt="arrow"
+                  class="ri-arrow-down-s-line"
+                />
+              </div>
+              <span class="home__scroll-text">Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">
+            <span>Обо мне.</span>
+          </h2>
+          <div class="about__perfil">
+            <div class="about__image">
+              <img class="about__img" src="img/about-perfil.jpg" alt="photo" />
+              <div class="about__shadow"></div>
+              <div class="geometric-box"></div>
+              <img class="about__line" src="img/random-lines.svg" alt="lines" />
+              <div class="about__box"></div>
+            </div>
+          </div>
+          <div class="about__info">
+            <p class="about__description">
+              expedita reprehenderit vel aliquid iure fugit excepturi hic
+            </p>
+            <p class="about__description">
+              expedita reprehenderit vel aliquid iure fugit excepturi hic
+            </p>
+            <ul class="about__list">
+              <li class="about__item">
+                expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    corporis asperiores necessitatibus, tempora cupiditate
+                    eligendi! Blanditiis.
+              </li>
+            </ul>
+            <div class="about__buttons">
+              <a class="button" href="#contact">
+                <img class="plane__line" src="img/send-line.svg" alt="lines" />
+                Связь со мной
+              </a>
+              <a
+                class="button__ghost"
+                href="https://t.me/lulisff"
+                target="_blank"
+              >
+                <img
+                  class="linkedin__line"
+                  src="img/telegram-fill.svg"
+                  alt="lines"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section">
+        <h2 class="section__title-2">
+          <span>Умения.</span>
+        </h2>
+        <div class="services__container container grid">
+          <article class="services__card">
+            <div class="services__border"></div>
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <img
+                  class="ri-layout-4-line"
+                  src="img/layout.svg"
+                  alt="layout"
+                />
+              </div>
+              <h2 class="services__title">Документы</h2>
+              <p class="services__description">
+                expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    corporis asperiores necessitatibus, tempora cupiditate
+                    eligendi! Blanditiis.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <img
+                  class="ri-code-box-line"
+                  src="img/code-box.svg"
+                  alt="code-box"
+                />
+              </div>
+              <h2 class="services__title">Разработка</h2>
+              <p class="services__description">
+                expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    corporis asperiores necessitatibus, tempora cupiditate
+                    eligendi! Blanditiis.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <img
+                  class="ri-smartphone-line"
+                  src="img/article-line.png"
+                  alt="article"
+                />
+              </div>
+              <h2 class="services__title">Оператор</h2>
+              <p class="services__description">
+                expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    corporis asperiores necessitatibus, tempora cupiditate
+                    eligendi! Blanditiis.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+          <span>Активности.</span>
+        </h2>
+        <div class="slider-container swiper">
+          <div class="slider-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="./img/project-1.jpg" class="card-img" alt="" />
+                  </div>
+                </div>
+                <div class="projects__content">
+                  <h3 class="projects__subtitle">Образование</h3>
+                  <h2 class="projects__title">
+                    expedita reprehenderit
+                  </h2>
+                  <p class="projects__description">
+                    expedita reprehenderit vel aliquid iure fugit excepturi hic
+                  
+                  </p>
+                </div>
+                <div class="projects__buttons">
+                  <a
+                    class="projects__link"
+                    href="https://kitib.kz/"
+                    target="_blank"
+                  >
+                    <img
+                      class="ri-dribbble-line"
+                      src="img/dribbble.svg"
+                      alt="dribbble-logo"
+                    />View
+                  </a>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="img/2021-08-28.jpg" class="card-img" alt="" />
+                  </div>
+                </div>
+                <div class="projects__content">
+                  <h3 class="projects__subtitle">Образование</h3>
+                  <h2 class="projects__title">
+                    expedita reprehenderit vel aliquid iure fugit excepturi hic
+                  
+                  </h2>
+                  <p class="projects__description">
+                    expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    
+                  </p>
+                </div>
+                <div class="projects__buttons">
+                  <a
+                    class="projects__link"
+                    href="https://www.omgtu.ru/"
+                    target="_blank"
+                  >
+                    <img
+                      class="ri-dribbble-line"
+                      src="img/dribbble.svg"
+                      alt="omgtu"
+                    />View
+                  </a>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="img/fefu.jpg" class="card-img" alt="" />
+                  </div>
+                </div>
+                <div class="projects__content">
+                  <h3 class="projects__subtitle">Образование</h3>
+                  <h2 class="projects__title">
+                    expedita reprehenderit
+                  </h2>
+                  <p class="projects__description">
+                    expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    corporis asperiores necessitatibus, tempora cupiditate
+                    eligendi! Blanditiis.
+                  </p>
+                </div>
+                <div class="projects__buttons">
+                  <a
+                    class="projects__link"
+                    href="https://www.dvfu.ru/en/"
+                    target="_blank"
+                  >
+                    <img
+                      class="ri-dribbble-line"
+                      src="img/dribbble.svg"
+                      alt="dribbble-logo"
+                    />View
+                  </a>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./img/monro.png" class="card-img" alt="" />
+                  </div>
+                </div>
+                <div class="projects__content">
+                  <h3 class="projects__subtitle">Работа</h3>
+                  <h2 class="projects__title">Сеть обувных бутиков "Монро"</h2>
+                  <p class="projects__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam repellat quas, optio nulla voluptatum doloremque
+                    expedita reprehenderit vel aliquid iure fugit excepturi hic
+                    corporis asperiores necessitatibus, tempora cupiditate
+                    eligendi! Blanditiis.
+                  </p>
+                </div>
+                <div class="projects__buttons">
+                  <a
+                    class="projects__link"
+                    href="https://www.instagram.com/monro_pvl_artur_obuv/"
+                    target="_blank"
+                  >
+                    <img
+                      class="ri-dribbble-line"
+                      src="img/instagram-fill.svg"
+                      alt="insta-logo"
+                    />View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title-2">
+              <span>Связь со мной.</span>
+            </h2>
+            <p class="contact__description-1">
+              Я читаю все письма. Отправьте мне любое сообщение, и вы получите
+              обратную связь.
+            </p>
+            <p class="contact__description-2">
+              Заполните ваше <b>Имя</b> и <b>Email Address</b>, и отправьте
+              сообщение.
+            </p>
+            <div class="geometric-box"></div>
+          </div>
+          <div class="contact__mail">
+            <h2 class="contact__title">Отправить сообщение</h2>
+            <form class="contact__form" action="" id="contact-form">
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    class="contact__input"
+                    name="user_name"
+                    type="text"
+                    id="name"
+                    required=""
+                    placeholder="Имя"
+                  />
+                  <label class="contact__label" for="name">Имя</label>
+                </div>
+                <div class="contact__box">
+                  <input
+                    class="contact__input"
+                    name="user_email"
+                    type="emil"
+                    id="email"
+                    required=""
+                    placeholder="Email Address"
+                  />
+                  <label class="contact__label" for="email"
+                    >Email Address</label
+                  >
+                </div>
+              </div>
+
+              <div class="contact__box">
+                <input
+                  class="contact__input"
+                  name="user_subject"
+                  type="text"
+                  id="subject"
+                  required=""
+                  placeholder="Тема"
+                />
+                <label class="contact__label" for="subject">Тема</label>
+              </div>
+
+              <div class="contact__box contact__area">
+                <textarea
+                  class="contact__input"
+                  name="user_message"
+                  id="message"
+                  required=""
+                  placeholder="Текст"
+                ></textarea>
+                <label class="contact__label" for="message">Текст</label>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button class="contact__button button" type="submit">
+                <img
+                  class="ri-send-plane-line"
+                  src="img/send-line.svg"
+                  alt="send"
+                />Отправить
+              </button>
+            </form>
+          </div>
+          <div class="contact__social">
+            <img
+              class="contact__social-arrow"
+              src="img/curved-arrow.svg"
+              alt="arrow"
+            />
+            <div class="contact__social-data">
+              <p class="contact__social-description-1">
+                Не отправляются письма?
+              </p>
+
+              <p class="contact__social-description-2">
+                Напиши мне в мессенджер
+              </p>
+            </div>
+
+            <div class="contact__social-links">
+              <a
+                class="contact__social-link"
+                href="https://t.me/lulisff"
+                target="_blank"
+              >
+                <img src="./img/telegram-line.svg" alt="telegram" />
+              </a>
+
+              <a
+                class="contact__social-link"
+                href="https://www.whatsapp.com/"
+                target="_blank"
+              >
+                <img src="./img/whatsapp-line.svg" alt="whatsapp" />
+              </a>
+
+              <a
+                class="contact__social-link"
+                href="https://www.github.com/natureSL"
+                target="_blank"
+              >
+                <img src="./img/github-line.svg" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a class="footer__link" href="#home">Главная</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#about">Обо мне</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#projects">Активности</a>
+          </li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By
+          <a href="#">Slava&Bedimcode.</a>
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a class="scrollup" href="#" id="scroll-up">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+        <path
+          d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z"
+          fill="rgba(255,255,255,1)"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- ========== SCROLLREVEAL ==========-->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== SWIPER SLIDER ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
